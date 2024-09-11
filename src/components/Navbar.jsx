@@ -35,13 +35,22 @@ function Navbar() {
 const Nav = styled.nav`
   .navbar-list {
     display: flex;
-    gap: 2rem;
+    gap: 4.8rem;
 
     li {
       list-style: none;
 
       .navbar-link {
-        text-decoration: none;
+        &:link,
+        &:visited {
+          display: inline-block;
+          text-decoration: none;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          color: ${({ theme }) => theme.colors.black};
+          transition: color 0.3s linear;
+        }
+
         &:hover,
         &:active {
           color: ${({ theme }) => theme.colors.helper};
