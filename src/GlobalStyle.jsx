@@ -14,6 +14,21 @@ html {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(24 24 29);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  background-repeat: 5px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+}
+
 body {
   overflow-x: hidden;
 }

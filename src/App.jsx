@@ -1,7 +1,9 @@
 import About from "./About";
 import Footer from "./components/Footer";
+import GoToTop from "./components/GoToTop";
 import Header from "./components/Header";
 import Contact from "./Contact";
+import Error from "./Error";
 import { GlobalStyle } from "./GlobalStyle";
 import Home from "./Home";
 import Services from "./Services";
@@ -40,7 +42,9 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/service" element={<Services />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="*" element={<Error />}></Route>
         </Routes>
+        <GoToTop />
         <Footer />
       </BrowserRouter>
     </ThemeProvider>

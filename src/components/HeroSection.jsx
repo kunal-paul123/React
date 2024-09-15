@@ -30,7 +30,7 @@ function HeroSection() {
 }
 
 const Wrapper = styled.section`
-  padding: 7rem 0;
+  padding: 5rem 0;
 
   .section-hero-data {
     display: flex;
